@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>BaseForm</title>
     <script src="public/js/loadHead.js" defer></script>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-light bg-warning">
-        <a></a>
-        <p class="h2">Simple Form Generator</p>
-        <a></a>
+      <nav class="navbar navbar-light bg-warning justify-content-center py-4">
+        <p class="h1 main-title text-uppercase">Simple Form Generator</p>
       </nav>
     </header>
     <section>
@@ -31,7 +28,7 @@
           </div>
           <div class="mt-1 text-center">
             <button type="submit" class="btn btn-dark text-justify">
-              Enviar
+              Gerar
             </button>
           </div>
         </form>
@@ -41,6 +38,7 @@
             <nav class="navbar navbar-dark bg-dark px-3 mb-2">
                 <a class="navbar-brand">HTML</a>
               </nav>
+              <p class="text-center h4 mb-5">Você pode clonar o repostório e colar o HTML gerado com um index na root, para reaproveitar a organização dos arquivos e as dependencias em pastas isoladas.</p>
               <textarea
                 class="form-control"
                 id="resultado"
@@ -51,11 +49,11 @@
       </div>
     </section>
     <footer class="footer mt-auto pt-3">
-        <nav class="navbar navbar-light bg-warning mt-5">
-            <a></a>
-            <p class="h6">Desenvolvido por ismaelithalo</p>
-            <a></a>
-        </nav>
+      <nav
+        class="navbar navbar-light bg-warning mt-5 justify-content-center text-muted"
+      >
+        <p class="h6">Desenvolvido por ismaelithalo</p>
+      </nav>
     </footer>
     <var>
         <script src="src/parser.js" defer></script>
