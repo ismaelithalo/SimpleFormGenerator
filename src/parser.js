@@ -5,8 +5,6 @@ document.getElementById("json").addEventListener("submit", function (event) {
     const jsonData = JSON.parse(jsonText);
     let dados = jsonData;
     let form = criaFormulario(dados);
-    // console.log("JSON recebido e armazenado:", dados);
-    // insereResposta(JSON.stringify(dados));
     insereResposta(form);
   } catch (error) {
     console.error("Erro: o texto inserido não é um JSON válido.");
@@ -14,46 +12,10 @@ document.getElementById("json").addEventListener("submit", function (event) {
   }
 });
 
-// let dados = {
-//   type: "title",
-//   title: "Database de Bias do Xet",
-//   description:
-//     "Estamos fazendo um levantamento dos bias dos grupos de kpop para entender melhor o perifl de cada um e extrair alguns dados bacanas da comunidade.",
-//   tags: ["girl group"],
-//   labels: ["NMIXX", "TWICE", "ABC"],
-//   forms: [
-//     {
-//       type: "radio-image",
-//       options: [
-//         { text: "BAE", image: "public/images/nmixx-bae.png" },
-//         { text: "Sullyoon", image: "public/images/nmixx-sullyoon.png" },
-//       ],
-//       label: "NMIXX",
-//       tags: ["girl group"],
-//     },
-//     {
-//       type: "text-input",
-//       title: "Insira aqui seu nickname do discord",
-//     },
-//   ],
-// };
-
-// console.log(dados);
-
 function insereResposta(resposta) {
   const divResposta = document.getElementById("resultado");
   divResposta.innerHTML = resposta;
 }
-
-// function criaTitulo(base) {
-//   const titulo = `<p class="h2">${base}</p>`;
-//   return titulo;
-// }
-
-// function criaDescricao(base) {
-//   const desc = `<p class="text-center h4 mb-5">${base}</p>`;
-//   return desc;
-// }
 
 function criaInputTexto(base, id) {
   let bloco = `<div class="my-5">`;
@@ -70,7 +32,7 @@ function criaRadioImagem(base, id) {
     bloco += `<p class="text-center h5">${base.title}</p>`;
   }
   base.options.forEach((item, index) => {
-    bloco += `<div class="form-check-inline" style="position: relative">
+    bloco += `<div class="form-check-inline my-3" style="position: relative">
     <label class="form-check-label" for="${id + "-" + index}">
                   <input
                     class="form-check-input"
@@ -106,10 +68,8 @@ function criaFormulario(data) {
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-light bg-warning">
-        <a></a>
-        <p class="h2">${data.title}</p>
-        <a></a>
+      <nav class="navbar navbar-light bg-warning justify-content-center py-4">
+        <p class="h1 main-title text-uppercase">${data.title}</p>
       </nav>
     </header>
     <section>
@@ -157,11 +117,9 @@ function criaFormulario(data) {
             </button>
           </div>
           </form></div></section><footer class="footer mt-auto pt-3">
-        <nav class="navbar navbar-light bg-warning mt-5">
-            <a></a>
-            <p class="h6">Desenvolvido por ismaelithalo</p>
-            <a></a>
-        </nav>
+            <nav class="navbar navbar-light bg-warning mt-5 justify-content-center text-muted">
+                <p class="h6">Desenvolvido por ismaelithalo</p>
+            </nav>
     </footer></body></html>`;
   return html;
 }

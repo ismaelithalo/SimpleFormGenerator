@@ -38,3 +38,21 @@ body {
 main {
   flex: 1;
 }
+
+/* .main-title {
+  font-family: "Brush Script MT", cursive;
+} */
+
+/* .gradient-custom {
+  background: #6a11cb;
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 0.9),
+    rgba(37, 117, 252, 0.9)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 0.9),
+    rgba(37, 117, 252, 0.9)
+  );
+} */
