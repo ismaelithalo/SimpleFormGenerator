@@ -1,0 +1,28 @@
+{
+  "title": "",
+  "description": "",
+  "tags": [],
+  "labels": [],
+  "forms": [
+    {
+      "type": "radio-image",
+      "title": "",
+      "options": [{ "text": "", "image": "" }],
+      "label": "",
+      "tags": []
+    },
+    {
+      "type": "text-input",
+      "title": "",
+      "label": "",
+      "tag": []
+    },
+    {
+      "type": "textarea-input",
+      "title": "",
+      "label": "",
+      "tag": [],
+      "rows": ""
+    }
+  ]
+}
